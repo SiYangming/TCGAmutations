@@ -52,10 +52,10 @@ TCGAmutations::tcga_available()
 `tcga_load` loads user mentioned TCGA dataset into global enviornment. Please be noted that, it will replace any variable with the same name as that of object name. Below example loads TCGA Leukemia cohort `tcga_laml` into current R session.
 
 ```{r}
-TCGAmutations::tcga_load(study = "LAML")
+#TCGAmutations::tcga_load(study = "LAML")
 
 #Typing tcga_laml prints summary of the object
-tcga_laml_mc3
+tcga_laml_mc3 <- TCGAmutations::tcga_load(study = "LAML")
 ```
 
 
